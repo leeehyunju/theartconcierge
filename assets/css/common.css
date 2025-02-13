@@ -1,0 +1,148 @@
+
+
+
+
+
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+*{
+    cursor: none;
+}
+
+body{
+    background: #f5f0ed;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    /* cursor: none; */
+    /* .sc-services에 z-index로 인해서 
+        overflow-hidden을 쓸수 없었기에 body에 줌 */
+    overflow-x: hidden;
+}
+.inner{
+    padding: 0 20px;
+}
+
+
+
+
+/* cursor */
+.cursor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 999;
+   
+}
+  
+/* .cursor-default-inner{
+    mix-blend-mode: difference;
+    backface-visibility: hidden;
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 18px;
+    height: 18px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+} */
+  
+
+/* 공통 */
+.headline{
+    text-transform: uppercase;
+}
+/* 버튼 */
+.btn-link .link-go{
+    position: relative;
+    z-index: 9;
+}
+.btn-link .link-go::after{
+    position: absolute;
+    pointer-events: none;
+    background-color: #000;
+    transform: translateY(5em);
+    content: "";
+    z-index: -1;
+    width: 100%;
+    padding-top: 100%;
+    right: 0;
+    bottom: auto;
+    border-radius: 50%;
+    transition: border-radius .15s cubic-bezier(.61, 1, .88, 1),transform .3s ease-in;
+}
+.btn-link .link-go:hover::after{
+    border-radius: 0;
+    transform: translateY(0);
+}
+.btn-link .link-go:hover{
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+
+
+
+
+
+
+
+
+/* grid */
+.col-1{ grid-column: auto / span 1; }
+.col-2{ grid-column: auto / span 2; }
+.col-3{ grid-column: auto / span 3; }
+.col-4{ grid-column: auto / span 4; }
+.col-5{ grid-column: auto / span 5; }
+.col-6{ grid-column: auto / span 6; }
+.col-7{ grid-column: auto / span 7; }
+.col-8{ grid-column: auto / span 8; }
+.col-9{ grid-column: auto / span 9; }
+.col-10{ grid-column: auto / span 10; }
+.col-11{ grid-column: auto / span 11; }
+.col-12{ grid-column: auto / span 12; }
+
+.start-1{ grid-column-start: 1; }
+.start-2{ grid-column-start: 2; }
+.start-3{ grid-column-start: 3; }
+.start-4{ grid-column-start: 4; }
+.start-5{ grid-column-start: 5; }
+.start-6{ grid-column-start: 6; }
+.start-7{ grid-column-start: 7; }
+.start-8{ grid-column-start: 8; }
+.start-9{ grid-column-start: 9; }
+.start-10{ grid-column-start: 10; }
+
+.end-1{ grid-column-end: 1; }
+.end-2{ grid-column-end: 2; }
+.end-3{ grid-column-end: 3; }
+.end-4{ grid-column-end: 4; }
+.end-5{ grid-column-end: 5; }
+.end-6{ grid-column-end: 6; }
+.end-7{ grid-column-end: 7; }
+.end-8{ grid-column-end: 8; }
+.end-9{ grid-column-end: 9; }
+.end-10{ grid-column-end: 10; }
+.end-11{ grid-column-end: 11; }
+.end-12{ grid-column-end: 12; }
+.end-13{ grid-column-end: 13; }
+
+

@@ -1,0 +1,584 @@
+
+
+
+
+/* welcome */
+.sc-welcome .content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.25rem;
+    align-items: end;
+}
+/* swiper의 정확한 크기를 잡아줘야 함 */
+.sc-welcome .swiper{
+    width: 300px;
+}
+.sc-welcome .thumb{
+    width: 300px;
+    height: 170px;
+}
+.sc-welcome img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.sc-welcome .headline{
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+    mix-blend-mode: difference;
+    text-align: center;
+    z-index: 998;
+    font-size: 8.33333vw;
+    font-weight: 600;
+    line-height: .8;
+    letter-spacing: -.025em;
+    color: #fff;
+}
+.sc-welcome .desc{
+    margin-bottom: 1.25rem;
+}
+.sc-welcome .desc .line,
+.sc-welcome .desc .word{
+    display: flex;
+}
+.sc-welcome .desc .char{
+    font-size: 25px;
+    line-height: 1.15;
+    letter-spacing: -.025em;
+    font-weight: 600;
+}
+.sc-welcome .video-area{
+    margin-top: calc(-2.5rem + -9.02778vw);
+}
+.sc-welcome .figure{
+    position: relative;
+    aspect-ratio: 93 / 53;
+    /* background: #0f0; */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1em 0 8.125em 0;
+}
+.sc-welcome video{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* center-area */
+.center-area .thumb img{
+    margin: 0 auto;
+    width: 40vw;
+    /* 완성됬을때 후값 */
+    clip-path: circle(71% at 50% 50%);
+}
+
+
+
+
+
+/* artworks */
+.sc-artworks{
+    position: relative;
+    top: 0;
+    transform: translateY(-30px);
+    padding: 0 34px 48px 29px;
+}
+.sc-artworks .group-head{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: .9;
+    font-size: 8.73333vw;
+    letter-spacing: -.025em;
+    font-weight: 600;
+}
+.sc-artworks .group-head .head{
+    padding-bottom: 20px;
+}
+/* 글자모션 */ 
+.sc-artworks .group-head .line{
+    overflow: hidden;
+}
+.sc-artworks .desc{
+    margin: 32px 0;
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+.sc-artworks .artworks-list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 0 34px;
+    padding-bottom: 120px;
+    gap: 20px;
+}
+
+.sc-artworks .artworks-item.ratio1{
+    width: 280px;
+    aspect-ratio: 0.718/1;
+    /* background: #f00; */
+}
+.sc-artworks .artworks-item.ratio2{
+    width: 400px;
+    aspect-ratio: 0.717/1;
+    /* background: #f00; */
+}
+.sc-artworks .artworks-item.ratio3{
+    width: 280px;
+    aspect-ratio: 0.718/1;
+    /* background: #f00; */
+}
+.sc-artworks .artworks-item .thumb{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background: #0f0; */
+    overflow: hidden;
+    /* border: 1px solid #000; */
+}
+.sc-artworks .artworks-list img{
+    /* position: absolute; */
+    width: 100%;
+    /* object-fit: cover; */
+    max-width: none;
+    /* left: -10%;
+    top: -10%; */
+}
+
+
+.sc-artworks .group-bottom .text-area{
+    margin-bottom: 1.25rem;
+    padding: 20px 22px;
+    width: 83.33333333%;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+.sc-artworks .group-bottom .text-area p{
+    font-weight: 600;
+    letter-spacing: -.025em;
+    line-height: 1.2;
+    font-size: 3.15vw;
+}
+.sc-artworks .group-bottom .line{
+    overflow: hidden;
+}
+.sc-artworks .btn-link a{
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 160px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+.sc-artworks .btn-link span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -.025em;
+}
+
+
+
+
+
+/* discover */
+.sc-discover{
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+.sc-discover .group-head{
+    z-index: 9;
+    color: #fff;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1vw;
+    position: sticky;
+    top: 10px;
+    padding-bottom: 100px;
+    /* padding-bottom때문에 클릭이 안되는 부분에 클릭이 가능하도록 함 */
+    pointer-events: none;
+}
+.sc-discover .group-head .line,
+.sc-discover .group-head .word{
+    display: flex;
+}
+.sc-discover .group-head .headline{
+    letter-spacing: -3px;
+    font-weight: 600;
+    font-size: 5vw;
+}
+.sc-discover .group-head .bar{
+    width: 100%;
+    background: #fff;
+    height: 0.5px;
+    flex: 0 0 33%;
+}
+.sc-discover .discover-inner{
+    padding: 0 12px;
+}
+.sc-discover .discover-inner .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    align-items: start;
+    grid-row-gap: 3em;
+    grid-column-gap: 1em;
+    padding: 4rem 2.4rem 3rem 1.8rem;
+}
+.sc-discover .artists-item.odd{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.sc-discover .artists-item .thumb{
+    width: 100%;
+    height: 100%;
+}
+.sc-discover .artists-item img{
+    width: 560px;
+    height: 560px;
+    object-fit: cover;
+}
+.sc-discover .text-area{
+    text-transform: uppercase;
+}
+.sc-discover .text-area .name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.sc-discover .text-area .major{
+    display: block;
+    line-height: 1;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+}
+.sc-discover .btn-link{
+    text-align: center;
+}
+.sc-discover .btn-link a{
+    display: inline-block;
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+.sc-discover .btn-link span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -.025em;
+}
+
+
+
+
+
+/* gallery */
+.sc-gallery{
+    display: flex;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.sc-gallery .group-head{
+    padding-bottom: 30px;
+    mix-blend-mode: difference;
+    color: #fff;
+    z-index: 999;
+    font-size: 8vw;
+    font-weight: 500;
+    line-height: .9;
+    letter-spacing: -.025em;
+    margin-bottom: calc(-2.5rem + -8.75vw);
+    text-transform: uppercase;
+}
+.sc-gallery .group-head .line{
+    overflow: hidden;
+}
+.sc-gallery .img-area{
+    width: 66.66667%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.sc-gallery .thumb{
+    z-index: -1;
+    position: relative;
+}
+.sc-gallery .thumb::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: linear-gradient(180deg,rgba(13,17,23,.95) 4.9%,
+    rgba(13,17,23,.75) 23.05%,
+    rgba(13,17,23,.1) 58.17%,rgba(13,17,23,.9));
+}
+.sc-gallery .text-area{
+    margin-bottom: 42px;
+}
+.sc-gallery .text-area .desc{
+    text-align: center;
+    line-height: 1;
+    font-size: calc(0.5vw + 20px);
+}
+.sc-gallery .btn-link{
+    text-align: center;
+}
+.sc-gallery .btn-link a{
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 35px;
+    overflow: hidden;
+}
+.sc-gallery .btn-link span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -.025em;
+}
+
+
+
+
+
+/* services */
+.sc-services{
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+.sc-services .group-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    z-index: 999;
+    font-size: 8vw;
+    font-weight: 600;
+    line-height: .9;
+    letter-spacing: -.025em;
+    margin-bottom: calc(-2.5rem + -8.75vw);
+    text-transform: uppercase;
+}
+.sc-services .group-head .line{
+    overflow: hidden;
+}
+.sc-services .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 6rem 5rem;
+    gap: 20px;
+    /* 가로스크롤 생기지않게 */
+    /* z-index: 1;로 인해 못씀 */
+    /* overflow: hidden; */
+}
+.sc-services .grid .img-area{
+    z-index: -1;
+}
+.sc-services .grid .text-area{
+    padding-top: 4rem;
+}
+.sc-services .text-area .services-item{
+    margin-top: 5px;
+    letter-spacing: -.05em;
+    font-size: 30px;
+    padding: clamp(8px, 1vw, 30px) clamp(10px, 0vw, 25px);
+    background-image: linear-gradient(to right, #222 0 10%, rgba(255, 255, 255, 0) 10%);
+    background-position: bottom;
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+    position: relative;
+    z-index: 9;
+    line-height: 1.2;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.sc-services .text-area .services-item .title{
+    font-weight: 500;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sc-services .text-area .services-item:hover .hov-img{
+    opacity: 1;
+    visibility: visible;
+}
+.sc-services .text-area .services-item:hover .hov-img img{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    transition: .3s;
+}
+.sc-services .text-area .services-item .hov-img{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    /* background: #0f0;
+    border: 1px solid #000; */
+    top: 100px;
+    opacity: 0;
+    visibility: hidden;
+}
+.sc-services .text-area .services-item .hov-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 1%, 0 0, 0 100%, 0% 100%);
+}
+
+
+
+
+
+/* font */
+.sc-font{
+    margin: -32px 0 25px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    /* marquee때문에 생긴 스크롤바 사라지게하는 코드 */
+    overflow: hidden;
+}
+.sc-font .marquee{
+    display: flex;
+    align-items: center;
+
+    padding: 90px 0;
+    background: #000;
+    color: #fff;
+}
+.sc-font .marquee .font-list{
+    display: flex;
+    animation: move 40s linear infinite;
+}
+.sc-font .marquee .font-item{
+    display: flex;
+    align-items: center;
+    height: 406px;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 15vw;
+    padding-right: .375em;
+}
+.sc-font .marquee p{
+    color: #ff00b8;
+}
+
+/* animation */
+@keyframes move{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+/* in-touch */
+.sc-in-touch{
+    padding: 3rem 0;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    position: relative;
+}
+.sc-in-touch .group-head{
+    max-width: 15em;
+    letter-spacing: -1px;
+    font-weight: 600;
+    margin: 2rem auto;
+    line-height: .8;
+    font-size: clamp(32px, calc(80 / 1600* 100vw), 80px);
+    text-transform: uppercase;
+}
+.sc-in-touch .group-head .line{
+    overflow: hidden;
+}
+.sc-in-touch .content{
+    display: flex;
+    padding-top: 120px;
+}
+.sc-in-touch .img-area{
+    display: flex;
+    align-items: flex-end;
+}
+.sc-in-touch .text-area .desc{
+    text-transform: uppercase;
+    letter-spacing: -.025rem;
+    font-size: 20px;
+    /* 텍스트의 첫 줄 들여쓰기 */
+    text-indent: 5%;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.sc-in-touch .col-left{
+    margin: 0 62px 40px;
+    width: 430px;
+    aspect-ratio: 0.717/1
+    /* background: #f00; */
+}
+.sc-in-touch .col-left .thumb{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background: #0f0; */
+    overflow: hidden;
+}
+.sc-in-touch .col-left img{
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    max-width: none;
+    left: -10%;
+    top: -10%;
+}
+.sc-in-touch .col-right{
+    margin: 0 136px 40px;
+}
+.sc-in-touch .btn-link a{
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 35px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.sc-in-touch .btn-link span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -.025em;
+}
+

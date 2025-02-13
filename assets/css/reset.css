@@ -1,0 +1,27 @@
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+fieldset{border: 0;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul,ol{list-style: none;}
+
+
+/* 초기화 + 세팅 */
+
+/* root 최상단 html의 기본세팅 + 변수 */
+:root{
+    
+}
+
+
+
+
+
+
+
+
+
+
