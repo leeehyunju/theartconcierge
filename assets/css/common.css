@@ -16,6 +16,7 @@
 }
 
 body{
+    min-width: 1300px;
     background: #f5f0ed;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
